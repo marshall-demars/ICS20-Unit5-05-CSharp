@@ -32,7 +32,7 @@ class Program
 
         // process
         Console.WriteLine("");
-       if ((lengthOne <= 0) || (lengthTwo <= 0) || (lengthThree <= 0))
+      if ((lengthOne <= 0) || (lengthTwo <= 0) || (lengthThree <= 0))
         {
             Console.WriteLine("");
             Console.WriteLine("You can't have negative length! Please input only positive numbers.");
