@@ -32,18 +32,26 @@ class Program
 
         // process
         Console.WriteLine("");
-        if (lengthOne == lengthTwo && lengthTwo == lengthThree)
+       if ((lengthOne <= 0) || (lengthTwo <= 0) || (lengthThree <= 0))
         {
-            Console.WriteLine("It is an equilateral triangle!");
-        }
-        else if (lengthOne != lengthTwo && lengthTwo != lengthThree)
-        {
-            Console.WriteLine("It is a scalene triangle!");
+            Console.WriteLine("");
+            Console.WriteLine("You can't have negative length! Please input only positive numbers.");
         }
         else
         {
-            Console.WriteLine("It is an isosceles triangle!");
+            if (lengthOne == lengthTwo && lengthTwo == lengthThree)
+            {
+                Console.WriteLine("It is an equilateral triangle!");
+            }
+            else if (lengthOne != lengthTwo && lengthTwo != lengthThree)
+            {
+                Console.WriteLine("It is a scalene triangle!");
+            }
+            else
+            {
+                Console.WriteLine("It is an isosceles triangle!");
+            }
+            Console.WriteLine("\nDone.");
         }
-        Console.WriteLine("\nDone.");
     }
 }
